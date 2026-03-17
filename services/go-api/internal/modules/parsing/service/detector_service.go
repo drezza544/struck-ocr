@@ -3,7 +3,7 @@ package service
 import (
 	"strings"
 
-	"go-api/internal/modules/parsing/domain"
+	"github.com/drezza544/struck-ocr/internal/modules/parsing/domain"
 )
 
 type DetectorService struct{}
@@ -20,7 +20,7 @@ func (s *DetectorService) Detect(rawText string) domain.DetectionResult {
 	parkingScore, parkingRules := scoreParkingReceipt(text)
 
 	bestType := domain.DocumentTypeUnknown
-	baseScore := 0.0
+	bestScore := 0.0
 	bestRules := []string{}
 
 	if boardingScore > bestScore {

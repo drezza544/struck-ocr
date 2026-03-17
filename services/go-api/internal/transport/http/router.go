@@ -3,8 +3,8 @@ package http
 import (
 	"github.com/gin-gonic/gin"
 
-	parsinghttp "go-api/internal/modules/parsing/delivery/http"
-	parsingservice "go-api/internal/modules/parsing/service"
+	parsinghttp "github.com/drezza544/struck-ocr/internal/modules/parsing/delivery/http"
+	parsingservice "github.com/drezza544/struck-ocr/internal/modules/parsing/service"
 )
 
 func NewRouter() *gin.Engine {

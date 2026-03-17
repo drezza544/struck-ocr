@@ -1,4 +1,4 @@
-module struck-ocr/go-api
+module github.com/drezza544/struck-ocr
 
 go 1.25.0
 

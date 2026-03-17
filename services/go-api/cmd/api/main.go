@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	httptransport "go-api/internal/transport/http"
+	httptransport "github.com/drezza544/struck-ocr/internal/transport/http"
 )
 
 func main() {

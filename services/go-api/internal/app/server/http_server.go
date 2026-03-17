@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"struck-ocr/go-api/config"
-	transport "struck-ocr/go-api/internal/transport/http"
+	transport "github.com/drezza544/struck-ocr/internal/transport/http"
 )
 
 func NewHTTPServer(cfg config.Config, db *sql.DB) *http.Server {
