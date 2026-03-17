@@ -1,0 +1,21 @@
+[project]
+name = "struck-ocr-service"
+version = "0.1.0"
+description = "OCR Service for receipt scanning.."
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "fastapi",
+  "unicorn[standard]",
+  "pydantic",
+  "pydantic-settings",
+  "python-dotenv",
+  "python-multipart",
+  "opencv-python",
+  "numpy",
+  "requests",
+  "paddleocr"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

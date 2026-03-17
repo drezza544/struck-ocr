@@ -1,0 +1,39 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    volumes:
+      - ./infra/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  api:
+    build:
+      context: .
+      dockerfile: infra/docker/go-api.Dockerfile
+    environment:
+      - GO_API_PORT=${GO_API_PORT}
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - OCR_SERVICE_BASE_URL=http://ocr-service:${OCR_SERVICE_PORT}
+    ports:
+      - "${GO_API_PORT}:8080"
+    depends_on:
+      - postgres
+      - ocr-service
+
+  ocr-service:
+    build:
+      context: .
+      dockerfile: infra/docker/ocr-service.Dockerfile
+    environment:
+      - OCR_SERVICE_PORT=${OCR_SERVICE_PORT}
+    ports:
+      - "${OCR_SERVICE_PORT}:8000"

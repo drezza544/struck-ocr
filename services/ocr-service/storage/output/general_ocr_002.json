@@ -1,0 +1,147 @@
+{
+  "raw_text": "H\nBOARDUNG\nPASS\nFLIGHT\n#\nDATE\nH\nCLASS\n9\nSERIAL NO.\nSEAT NO\nMU 2379\n03DEC\nW\n035\nTO\nFROM\nU\nGATE\nU0[BDT\n1\n~\nTAIYUAN\nG11\nFUZHOU\nNAME\nIIDNO.\nZHANGQIWEI\nTKI NO\n5RE1\nFARE\nETKT 7813699238489/1\n0\nGATES CLOSE 1O MINUTES BEFORE DEPARTURE TIME",
+  "text_blocks": [
+    {
+      "text": "H",
+      "confidence": 0.288
+    },
+    {
+      "text": "BOARDUNG",
+      "confidence": 0.9397
+    },
+    {
+      "text": "PASS",
+      "confidence": 0.9888
+    },
+    {
+      "text": "FLIGHT",
+      "confidence": 0.998
+    },
+    {
+      "text": "#",
+      "confidence": 0.8426
+    },
+    {
+      "text": "DATE",
+      "confidence": 0.9998
+    },
+    {
+      "text": "H",
+      "confidence": 0.3067
+    },
+    {
+      "text": "CLASS",
+      "confidence": 0.9992
+    },
+    {
+      "text": "9",
+      "confidence": 0.553
+    },
+    {
+      "text": "SERIAL NO.",
+      "confidence": 0.9583
+    },
+    {
+      "text": "SEAT NO",
+      "confidence": 0.9704
+    },
+    {
+      "text": "MU 2379",
+      "confidence": 0.9922
+    },
+    {
+      "text": "03DEC",
+      "confidence": 0.9933
+    },
+    {
+      "text": "W",
+      "confidence": 0.8377
+    },
+    {
+      "text": "035",
+      "confidence": 0.9869
+    },
+    {
+      "text": "TO",
+      "confidence": 0.8575
+    },
+    {
+      "text": "FROM",
+      "confidence": 0.9992
+    },
+    {
+      "text": "U",
+      "confidence": 0.7448
+    },
+    {
+      "text": "GATE",
+      "confidence": 0.9998
+    },
+    {
+      "text": "U0[BDT",
+      "confidence": 0.4661
+    },
+    {
+      "text": "1",
+      "confidence": 0.5687
+    },
+    {
+      "text": "~",
+      "confidence": 0.3431
+    },
+    {
+      "text": "TAIYUAN",
+      "confidence": 0.9939
+    },
+    {
+      "text": "G11",
+      "confidence": 0.9994
+    },
+    {
+      "text": "FUZHOU",
+      "confidence": 0.9977
+    },
+    {
+      "text": "NAME",
+      "confidence": 0.9981
+    },
+    {
+      "text": "IIDNO.",
+      "confidence": 0.7787
+    },
+    {
+      "text": "ZHANGQIWEI",
+      "confidence": 0.9648
+    },
+    {
+      "text": "TKI NO",
+      "confidence": 0.8469
+    },
+    {
+      "text": "5RE1",
+      "confidence": 0.5933
+    },
+    {
+      "text": "FARE",
+      "confidence": 0.9983
+    },
+    {
+      "text": "ETKT 7813699238489/1",
+      "confidence": 0.9764
+    },
+    {
+      "text": "0",
+      "confidence": 0.4925
+    },
+    {
+      "text": "GATES CLOSE 1O MINUTES BEFORE DEPARTURE TIME",
+      "confidence": 0.989
+    }
+  ],
+  "meta": {
+    "engine": "paddleocr",
+    "preprocessing_applied": true,
+    "original_file_path": "storage/temp/general_ocr_002.png",
+    "processed_file_path": "storage/processed/processed_general_ocr_002.png"
+  }
+}
